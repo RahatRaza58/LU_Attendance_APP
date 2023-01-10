@@ -1,0 +1,5 @@
+1. Database connectivity
+	-sql
+	-firebase
+	-oracle
+	-mongodb
