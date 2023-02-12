@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterAdmin">
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Smart Attendance Apps "
+        android:textSize="35sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/bannerDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Register Forms"
+        android:textstyle="italic"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/banner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:textsize="24sp"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bannerDescription" />
+
+    <EditText
+        android:id="@+id/dept"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Department"
+        android:inputType="number"
+        android:textsize="24sp"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Name" />
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Mobile"
+        android:inputType="number"
+        android:textsize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dept"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textsize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mobile"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textsize="24sp"
+        android:hint="Password"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <Button
+        android:id="@+id/registerUser"
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#0ED6AE"
+        android:text="Register User"
+        android:textColor="#ffffff"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password" />
+
+    <ImageButton
+        android:id="@+id/image"
+        android:layout_width="140dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="144dp"
+        android:backgroundTint="#0000D48A"
+        android:scaleType="fitCenter"
+        android:src="@drawable/LU"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
